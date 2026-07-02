@@ -119,13 +119,13 @@
 	color: var(--color-primary);
 }
 
-@media screen and (width >= 768px) {
+@media screen and (min-width: 768px) {
 	.imageColumn {
 		margin-right: -50px;
 	}
 }
 
-@media screen and (width < 768px) {
+@media screen and (max-width: 767px) {
 	.page {
 		height: 100dvh;
 		background: unset;
@@ -208,7 +208,7 @@
 /**
  * Prevent text wrapping on small screens by scaling font-size relative to container width.
  */
-@media screen and (width < 500px) {
+@media screen and (max-width: 500px) {
 	.title {
 		font-size: clamp(1rem, 8.5cqw, 2.2rem);
 	}

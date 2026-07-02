@@ -8,6 +8,7 @@ export default {
 		'stylelint-order'
 	],
 	rules: {
-		'selector-class-pattern': null
+		'selector-class-pattern': null,
+		'media-feature-range-notation': 'prefix'
 	}
 };
