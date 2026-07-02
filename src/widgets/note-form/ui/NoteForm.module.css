@@ -36,7 +36,7 @@
 	right: 16px;
 	bottom: 0;
 	bottom: calc(
-		env(safe-area-inset-bottom, 0) +
+		env(safe-area-inset-bottom, 0px) +
 		var(--textarea-padding) +
 		0.5rem -
 		25px +

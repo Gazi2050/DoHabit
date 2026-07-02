@@ -2,21 +2,21 @@
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-	height: 100%;
+	padding-bottom: calc(16px + env(safe-area-inset-bottom, 0) + 56px + 48px)
 }
 
 .actions {
-	position: sticky;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 10;
 	display: flex;
 	gap: 8px;
-	padding: 16px 0;
-	margin-top: auto;
+	padding: 0 var(--app-inline-padding);
+	padding-top: 16px;
+	padding-bottom: calc(16px + env(safe-area-max-inset-bottom, 0px));
 	background-image: linear-gradient(transparent, var(--bg));
-	transform: translateY(16px);
 }
 
 .actions button {

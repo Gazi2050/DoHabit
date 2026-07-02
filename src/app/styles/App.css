@@ -1,5 +1,9 @@
+:root {
+	--app-inline-padding: 16px;
+}
+
 .App {
-	padding: 0 16px;
+	padding: 0 var(--app-inline-padding);
 }
 
 .toast {
