@@ -114,7 +114,11 @@ function WelcomeView() {
 
 						{status !== 'INSTALLED' && (
 							<Button
-								variant='secondary'
+								variant='text'
+								style={{
+									color: 'var(--color-secondary)',
+									height: '36px'
+								}}
 								onClick={handleContinue}
 							>
 								{t('welcome.actions.continue')}

@@ -59,7 +59,7 @@
 	background-color: var(--bg-color-tertiary);
 }
 
-@media screen and (width >= 576px) {
+@media screen and (min-width: 576px) {
 	.form {
 		bottom: 0;
 		width: var(--app-width);

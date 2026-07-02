@@ -88,7 +88,8 @@
 
 .actions {
 	display: flex;
-	gap: 16px;
+	gap: 32px;
+	align-items: center;
 	margin-top: 16px;
 }
 
@@ -127,7 +128,7 @@
 
 @media screen and (max-width: 767px) {
 	.page {
-		height: 100dvh;
+		height: 100%;
 		background: unset;
 	}
 
@@ -148,7 +149,8 @@
 		z-index: 2;
 		flex: 0 0 auto;
 		width: 100%;
-		padding: 0 16px 32px;
+		padding: 0 16px;
+		padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
 		margin-top: auto;
 		background: linear-gradient(
 			to bottom,
@@ -194,6 +196,8 @@
 
 	.actions {
 		flex-direction: column;
+		gap: 16px;
+		align-items: unset;
 	}
 
 	.imageColumn {
