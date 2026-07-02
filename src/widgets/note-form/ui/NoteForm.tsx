@@ -1,5 +1,5 @@
 import styles from './NoteForm.module.css';
-import { type KeyboardEvent } from 'react';
+import { useEffect, useRef, type KeyboardEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -42,6 +42,19 @@ function NoteForm(props: Props) {
 	const closeForm = useNoteFormStore((s) => s.closeForm);
 
 	useNativeBackClose(isOpen, () => closeForm(isEditMode));
+
+	const inputRef = useRef<HTMLTextAreaElement>(null);
+
+	// FIXME: Delay focus by 50ms to prevent the iOS keyboard from overlapping the form
+	useEffect(() => {
+		if (!isOpen) return;
+
+		const timeoutId = setTimeout(() => {
+			inputRef.current?.focus();
+		}, 50);
+
+		return () => clearTimeout(timeoutId);
+	}, [isOpen]);
 
 	/**
 	 * Handles note submission.
@@ -116,13 +129,13 @@ function NoteForm(props: Props) {
 							onSubmit={handleSubmitForm}
 						>
 							<TextareaAutosize
+								ref={inputRef}
 								name='note-input'
 								id='note-input'
 								minRows={1}
 								maxRows={10}
 								value={draftText}
 								placeholder={t('notes.form.textPlaceholder')}
-								autoFocus
 								autoComplete='off'
 								onChange={(e) => setDraftText(e.target.value)}
 								onKeyDown={handleKeyDown}
