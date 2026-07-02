@@ -26,6 +26,7 @@
 	padding-bottom: 8px;
 	margin-top: 16px;
 	color: var(--color-secondary);
+	pointer-events: none;
 }
 
 .monthLabelWrapper[data-first-group] {
