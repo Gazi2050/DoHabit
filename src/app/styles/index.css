@@ -22,7 +22,7 @@ input[type='number'] {
 	/* https://developer.chrome.com/docs/css-ui/edge-to-edge */
 	--safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
 	--app-width: 640px;
-	--header-height: 72px;
+	--header-height: 80px;
 	--accent-color: dodgerblue;
 	--color-primary: light-dark(hsl(0deg 0% 10%), hsl(0deg 0% 90%));
 	--color-secondary: light-dark(hsl(0deg 0% 40%), hsl(0deg 0% 50%));
