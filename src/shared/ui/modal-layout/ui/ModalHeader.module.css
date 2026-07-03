@@ -1,29 +1,43 @@
+.wrapper {
+	padding: 0 var(--app-inline-padding);
+}
+
 /* header */
 .header {
 	display: flex;
-	flex-shrink: 0;
-	gap: 16px;
+	gap: 8px;
 	align-items: center;
 	height: var(--header-height);
 }
 
+.buttonWrapper {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+}
+
 .closeButton {
 	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
 	padding: 0;
 	background-color: unset;
 }
 
 .closeButton svg {
-	width: 26px;
-	height: 26px;
+	width: 22px;
+	height: 22px;
 	stroke-width: 20;
-	transform: rotate(180deg);
 }
 
 /* title */
 .title {
+	display: flex;
+	align-items: center;
+	height: 48px;
+	padding: 0 16px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	white-space: nowrap;
 }
