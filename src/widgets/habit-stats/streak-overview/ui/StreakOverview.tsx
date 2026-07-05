@@ -9,8 +9,8 @@ interface StreakOverviewProps {
 	longestStreak: number;
 }
 
-const CURRENT_BG = '#ff9f7b20';
-const LONGEST_BG = '#ffde7b20';
+const CURRENT_BG = '#ffb69c20';
+const LONGEST_BG = '#ffe59920';
 
 /**
  * Displays a summary card group showing current and longest habit streaks.

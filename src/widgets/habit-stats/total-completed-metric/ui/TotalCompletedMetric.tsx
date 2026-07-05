@@ -8,7 +8,7 @@ interface Props {
 	days: CompletedDay[];
 }
 
-const BG = '#7cc6ff20';
+const BG = '#99d3ff20';
 
 /**
  * Displays the total number of completions for a habit over a selected period.
