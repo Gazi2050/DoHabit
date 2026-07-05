@@ -10,6 +10,7 @@
 .content {
 	position: relative;
 	flex: 1;
+	padding-inline: var(--app-inline-padding);
 	padding-top: var(--header-height);
 	padding-bottom: 16px;
 	overflow-y: auto;

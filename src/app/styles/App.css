@@ -4,7 +4,7 @@
 }
 
 .App {
-	padding: 0 var(--app-inline-padding);
+	/* padding: 0 var(--app-inline-padding); */
 }
 
 .header-wrapper,
@@ -52,9 +52,9 @@
 }
 
 .paletteItem {
-  	--base-color: light-dark(oklch(80% 0.2 var(--hue)), oklch(60% 0.13 var(--hue)));
-  	--darkened-color: light-dark(oklch(96% 0.02 var(--hue)), oklch(30% 0.01 var(--hue)));
-  	--softened-color: light-dark(oklch(70% 0.04 var(--hue)), oklch(58% 0.03 var(--hue)));
+  	--base-color: light-dark(oklch(80% 0.13 var(--hue)), oklch(55% 0.13 var(--hue)));
+  	--darkened-color: light-dark(oklch(96% 0.02 var(--hue)), oklch(30% 0.02 var(--hue)));
+  	--softened-color: light-dark(oklch(80% 0.04 var(--hue)), oklch(58% 0.04 var(--hue)));
 }
 
 @media screen and (min-width: 576px) {
