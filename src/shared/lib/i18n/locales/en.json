@@ -201,7 +201,8 @@
 			"streakHistoryDesc": "Shows streaks of 2 days or more",
 			"streakHistoryTitle": "Streak history",
 			"title": "Statistics",
-			"totalCompleted": "Total completed days",
+			"totalCompletedTitle": "Total completions",
+			"totalCompletedDesc": "Times completed during this year",
 			"weekdayChartTitle": "Completions / Weekday"
 		}
 	},

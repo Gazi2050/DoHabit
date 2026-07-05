@@ -202,7 +202,9 @@
 			"streakHistoryTitle": "连续记录",
 			"title": "统计",
 			"totalCompleted": "总计完成天数",
-			"weekdayChartTitle": "单周完成度"
+			"weekdayChartTitle": "单周完成度",
+			"totalCompletedTitle": "总计完成",
+			"totalCompletedDesc": "今年完成次数"
 		}
 	},
 	"menu": {

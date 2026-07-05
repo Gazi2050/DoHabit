@@ -202,7 +202,9 @@
 			"streakHistoryTitle": "История серий",
 			"title": "Статистика",
 			"totalCompleted": "Всего выполненных дней",
-			"weekdayChartTitle": "Выполнения / День недели"
+			"weekdayChartTitle": "Выполнения / День недели",
+			"totalCompletedTitle": "Выполнено раз",
+			"totalCompletedDesc": "За этот год"
 		}
 	},
 	"menu": {
