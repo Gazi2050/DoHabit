@@ -196,14 +196,16 @@
 			"chartCompletions": "Completions",
 			"currentStreak": "Current",
 			"longestStreak": "Longest",
-			"monthlyChartTitle": "Completions / Month",
+			"monthlyChartTitle": "Completions by month",
+			"monthlyChartDesc": "Distribution of completions across months",
 			"streak": "Streak",
 			"streakHistoryDesc": "Shows streaks of 2 days or more",
 			"streakHistoryTitle": "Streak history",
 			"title": "Statistics",
 			"totalCompletedTitle": "Total completions",
 			"totalCompletedDesc": "Times completed during this year",
-			"weekdayChartTitle": "Completions / Weekday"
+			"weekdayChartTitle": "Completions by weekday",
+			"weekdayChartDesc": "Distribution of completions across days"
 		}
 	},
 	"menu": {
