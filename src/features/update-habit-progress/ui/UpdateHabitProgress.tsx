@@ -80,7 +80,18 @@ function UpdateHabitProgress({ habit }: Props) {
 				{...attrs}
 				onClick={() => handleUpdateProgress()}
 			>
-				{!isCompleted && (
+				{/* Render check for completed habits */}
+				{isCompleted && (
+					<FaCheck color="var(--color-primary)" />
+				)}
+
+				{/* Render faint check for uncompleted single-step habits */}
+				{(!isCompleted && frequency === 1) && (
+					<FaCheck color="var(--habit-color-soft)" />
+				)}
+
+				{/* Render progress bar for active multi-step habits */}
+				{(!isCompleted && frequency > 1) && (
 					<CircularProgressbarWithChildren
 						value={percentage}
 						strokeWidth={18}
@@ -97,22 +108,16 @@ function UpdateHabitProgress({ habit }: Props) {
 							}
 						}}
 					>
-						{frequency > 1 && (
-							<RadialSeparators
-								count={frequency}
-								style={{
-									background: 'var(--habit-color-dark)',
-									width: '2px',
-									// This needs to be equal to props.strokeWidth
-									height: `${18}%`
-								}}
-							/>
-						)}
+						<RadialSeparators
+							count={frequency}
+							style={{
+								background: 'var(--habit-color-dark)',
+								width: '2px',
+								// This needs to be equal to props.strokeWidth
+								height: `${18}%`
+							}}
+						/>
 					</CircularProgressbarWithChildren>
-				)}
-
-				{isCompleted && (
-					<FaCheck />
 				)}
 			</Button>
 		</div>

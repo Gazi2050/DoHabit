@@ -13,13 +13,13 @@
 .buttonWrapper {
 	display: flex;
 	align-items: center;
-	padding: 8px;
+	height: 48px;
 }
 
 .closeButton {
 	flex-shrink: 0;
-	width: 32px;
-	height: 32px;
+	width: 48px;
+	height: 48px;
 	padding: 0;
 	background-color: unset;
 }
