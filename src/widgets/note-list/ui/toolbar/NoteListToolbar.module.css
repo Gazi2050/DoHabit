@@ -5,7 +5,8 @@
 .wrapper {
 	height: var(--toolbar-height);
 	background-color: var(--bg);
-	box-shadow: 0 5px 5px color-mix(in srgb, var(--bg) 50%, transparent);
+
+	/* box-shadow: 0 5px 5px color-mix(in srgb, var(--bg) 50%, transparent); */
 }
 
 /* .toolbar */
@@ -23,6 +24,11 @@
 	display: flex;
 	gap: 8px;
 	height: 100%;
+}
+
+.toolbarActionsWrapper button {
+	/* Light box-shadow visible only on light theme */
+	box-shadow: 0 0 12px #0001;
 }
 
 /* selectionToolbar */

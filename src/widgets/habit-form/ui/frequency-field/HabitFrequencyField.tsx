@@ -51,7 +51,8 @@ function HabitFrequencyField({ initialFrequency = 1 }: Props) {
 						onClick={() => handleClick('decrement')}
 						disabled={frequency <= 1}
 					>
-						-
+						{/* eslint-disable-line */}
+						—
 					</Button>
 
 					<Button

@@ -9,7 +9,7 @@
 	background-color: var(--bg-color-primary);
 	border-radius: var(--border-radius-secondary);
 
-	 /* Light box-shadow visible only on light theme */
+	/* Light box-shadow visible only on light theme */
 	box-shadow: 0 0 12px #0001;
 }
 

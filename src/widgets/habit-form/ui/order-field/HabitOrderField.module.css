@@ -16,12 +16,20 @@
 	height: var(--input-height-primary);
 	text-align: center;
 	pointer-events: none;
+
+	/* Light box-shadow visible only on light theme */
+	box-shadow: 0 0 12px #0001
 }
 
 .buttonsWrapper {
 	display: flex;
 	gap:4px;
 	width: 100%
+}
+
+.buttonsWrapper button {
+	/* Light box-shadow visible only on light theme */
+	box-shadow: 0 0 12px #0001
 }
 
 .buttonsWrapper button:first-child {
