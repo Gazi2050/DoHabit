@@ -12,7 +12,7 @@
 	flex: 1;
 	padding-inline: var(--app-inline-padding);
 	padding-top: var(--header-height);
-	padding-bottom: 16px;
+	padding-bottom: var(--app-bottom-padding);
 	overflow-y: auto;
 }
 

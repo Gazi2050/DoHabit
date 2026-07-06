@@ -1,5 +1,6 @@
 :root {
 	--app-inline-padding: 16px;
+	--app-bottom-padding: calc(16px + env(safe-area-max-inset-bottom, 0px));
 	--grad-dir: to bottom;
 }
 
@@ -41,7 +42,7 @@
 	position: fixed;
 	bottom: 0;
 	padding-top: 16px;
-	padding-bottom: calc(16px + env(safe-area-max-inset-bottom, 0px));
+	padding-bottom: var(--app-bottom-padding);
 
 	--grad-dir: to top;
 }
