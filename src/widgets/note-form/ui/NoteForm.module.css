@@ -17,6 +17,7 @@
 .form textarea {
 	width: 100%;
 	padding: var(--textarea-padding);
+	padding-right: calc(var(--button-size) + var(--textarea-padding));
 	font-size: 1rem;
 	line-height: 1.5rem;
 	resize: none;

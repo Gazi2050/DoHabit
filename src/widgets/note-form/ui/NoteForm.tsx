@@ -14,7 +14,7 @@ import { Button, Overlay } from '@shared/ui';
 
 interface Props {
 	habitId?: string;
-	streak?: number,
+	streak?: number;
 }
 
 const isDev = import.meta.env.DEV;
@@ -52,7 +52,7 @@ function NoteForm(props: Props) {
 
 		const timeoutId = setTimeout(() => {
 			inputRef.current?.focus();
-		}, 50);
+		}, 0);
 
 		return () => clearTimeout(timeoutId);
 	}, [isOpen]);
